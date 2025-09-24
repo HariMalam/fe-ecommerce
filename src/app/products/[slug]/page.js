@@ -14,6 +14,8 @@ const inr = (v) =>
 
 export default function ProductPage() {
   const { products, addToCart, setToastData } = useAppContext();
+  const router = useRouter();
+
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
 
@@ -37,7 +39,6 @@ export default function ProductPage() {
   };
 
   const handleBuyNow = () => {
-    const router = useRouter();
     // Add product to cart (or handle purchase)
     addToCart(product.id, qty, color);
 
