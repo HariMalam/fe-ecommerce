@@ -1,0 +1,383 @@
+[
+  {
+    "id": 1,
+    "name": "StellarX Pro Smartphone",
+    "slug": "stellarx-pro-smartphone",
+    "brand": "CosmoTech",
+    "price": {
+      "mrp": 119999.0,
+      "sellPrice": 99999.0
+    },
+    "currency": "INR",
+    "launchDate": "2025-03-15",
+    "categoryId": 1,
+    "category": "Electronics",
+    "subcategoryId": 101,
+    "subcategory": "Smartphones",
+    "description": "Experience the universe in your palm with the StellarX Pro. Featuring a cutting-edge quantum dot display, a triple-lens astrophotography camera system, and unparalleled processing power.",
+    "images": [
+      "https://picsum.photos/seed/CT-SXP-GB-512-IN-1/600/600",
+      "https://picsum.photos/seed/CT-SXP-GB-512-IN-2/600/600",
+      "https://picsum.photos/seed/CT-SXP-GB-512-IN-3/600/600"
+    ],
+    "stock": 250,
+    "rating": { "rate": 4.9, "count": 4512 },
+    "attributes": {
+      "colors": [
+        { "name": "Galaxy Black", "code": "#101820" },
+        { "name": "Starlight White", "code": "#F8F8FF" },
+        { "name": "Nebula Blue", "code": "#3A5BA0" }
+      ],
+      "storage": "512GB",
+      "ram": "16GB",
+      "screen_size": "6.7 inches"
+    },
+    "features": [
+      "120Hz ProMotion Display",
+      "5G Connectivity",
+      "48-Hour Adaptive Battery",
+      "Titanium Alloy Frame"
+    ],
+    "sku": "CT-SXP-GB-512-IN"
+  },
+  {
+    "id": 2,
+    "name": "AeroBook UltraSlim Laptop",
+    "slug": "aerobook-ultraslim-laptop",
+    "brand": "InnovatePC",
+    "price": {
+      "mrp": 149990.0,
+      "sellPrice": 124990.0
+    },
+    "currency": "INR",
+    "launchDate": "2024-11-20",
+    "categoryId": 1,
+    "category": "Electronics",
+    "subcategoryId": 102,
+    "subcategory": "Laptops",
+    "description": "The AeroBook UltraSlim redefines portability without compromising on performance. Crafted from a single block of aluminum, it's incredibly light and durable, perfect for the professional on the go.",
+    "images": [
+      "https://picsum.photos/seed/IPC-ABU-SG-1TB-IN-1/600/600",
+      "https://picsum.photos/seed/IPC-ABU-SG-1TB-IN-2/600/600",
+      "https://picsum.photos/seed/IPC-ABU-SG-1TB-IN-3/600/600"
+    ],
+    "stock": 120,
+    "rating": { "rate": 4.8, "count": 1890 },
+    "attributes": {
+      "colors": [
+        { "name": "Space Gray", "code": "#6E6E6E" },
+        { "name": "Silver", "code": "#C0C0C0" },
+        { "name": "Midnight Green", "code": "#004953" }
+      ],
+      "storage": "1TB SSD",
+      "ram": "32GB",
+      "screen_size": "14 inches"
+    },
+    "features": [
+      "12-core M3 Processor",
+      "Liquid Retina XDR Display",
+      "Backlit Magic Keyboard",
+      "Thunderbolt 4 Ports"
+    ],
+    "sku": "IPC-ABU-SG-1TB-IN"
+  },
+  {
+    "id": 3,
+    "name": "EchoBuds Noise-Cancelling Earbuds",
+    "slug": "echobuds-noise-cancelling-earbuds",
+    "brand": "SonicWave",
+    "price": {
+      "mrp": 19999.0,
+      "sellPrice": 14999.0
+    },
+    "currency": "INR",
+    "launchDate": "2025-01-10",
+    "categoryId": 1,
+    "category": "Electronics",
+    "subcategoryId": 103,
+    "subcategory": "Earbuds",
+    "description": "Immerse yourself in pure sound with EchoBuds. Featuring advanced active noise-cancellation and a custom-tuned audio driver for rich bass and crystal-clear highs.",
+    "images": [
+      "https://picsum.photos/seed/SW-EBN-MB-IN-1/600/600",
+      "https://picsum.photos/seed/SW-EBN-MB-IN-2/600/600"
+    ],
+    "stock": 800,
+    "rating": { "rate": 4.6, "count": 9870 },
+    "attributes": {
+      "colors": [
+        { "name": "Matte Black", "code": "#222222" },
+        { "name": "Pearl White", "code": "#FDFDFD" }
+      ],
+      "connectivity": "Bluetooth 5.2",
+      "battery_life": "8 hours (32 hours with case)"
+    },
+    "features": [
+      "Active Noise Cancellation",
+      "Transparency Mode",
+      "IPX7 Water-Resistant",
+      "Wireless Charging Case"
+    ],
+    "sku": "SW-EBN-MB-IN"
+  },
+  {
+    "id": 4,
+    "name": "Men's Classic Cotton Crew T-Shirt",
+    "slug": "mens-classic-cotton-crew-t-shirt",
+    "brand": "ThreadWorks",
+    "price": {
+      "mrp": 1499.0,
+      "sellPrice": 999.0
+    },
+    "currency": "INR",
+    "launchDate": "2024-05-01",
+    "categoryId": 2,
+    "category": "Fashion",
+    "subcategoryId": 201,
+    "subcategory": "Men's T-Shirts",
+    "description": "An essential for any wardrobe. Our Classic Crew is made from 100% long-staple Pima cotton for unmatched softness and durability. Perfect for layering or as a standalone piece.",
+    "images": [
+      "https://picsum.photos/seed/TW-MCCT-WHT-M-IN-1/600/600",
+      "https://picsum.photos/seed/TW-MCCT-WHT-M-IN-2/600/600",
+      "https://picsum.photos/seed/TW-MCCT-WHT-M-IN-3/600/600"
+    ],
+    "stock": 1500,
+    "rating": { "rate": 4.7, "count": 5421 },
+    "attributes": {
+      "colors": [
+        { "name": "White", "code": "#FFFFFF" },
+        { "name": "Black", "code": "#000000" },
+        { "name": "Heather Grey", "code": "#BEBEBE" },
+        { "name": "Navy", "code": "#1A237E" }
+      ],
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "material": "100% Pima Cotton"
+    },
+    "features": [
+      "Ultra-soft feel",
+      "Athletic fit",
+      "Tagless neck label for comfort",
+      "Pre-shrunk to minimize shrinkage"
+    ],
+    "sku": "TW-MCCT-WHT-M-IN"
+  },
+  {
+    "id": 5,
+    "name": "A-Line Floral Sundress",
+    "slug": "a-line-floral-sundress",
+    "brand": "Bella Bloom",
+    "price": {
+      "mrp": 3999.0,
+      "sellPrice": 2499.0
+    },
+    "currency": "INR",
+    "launchDate": "2025-02-20",
+    "categoryId": 2,
+    "category": "Fashion",
+    "subcategoryId": 202,
+    "subcategory": "Women's Dresses",
+    "description": "Embrace the sunshine with this beautiful A-Line sundress. Made from lightweight, breathable rayon, it features a vibrant floral print and a flattering silhouette.",
+    "images": [
+      "https://picsum.photos/seed/BB-AFSD-CFL-S-IN-1/600/600",
+      "https://picsum.photos/seed/BB-AFSD-CFL-S-IN-2/600/600"
+    ],
+    "stock": 450,
+    "rating": { "rate": 4.8, "count": 1234 },
+    "attributes": {
+      "colors": [
+        { "name": "Coral Floral", "code": "#FF7F50" },
+        { "name": "Blue Ditsy", "code": "#4682B4" },
+        { "name": "Yellow Daisy", "code": "#FFD700" }
+      ],
+      "size": ["XS", "S", "M", "L"],
+      "material": "100% Rayon"
+    },
+    "features": [
+      "Adjustable spaghetti straps",
+      "Smocked back panel",
+      "Hidden side pockets",
+      "Knee-length cut"
+    ],
+    "sku": "BB-AFSD-CFL-S-IN"
+  },
+  {
+    "id": 6,
+    "name": "Barista Pro Espresso Machine",
+    "slug": "barista-pro-espresso-machine",
+    "brand": "CafeMaster",
+    "price": {
+      "mrp": 79990.0,
+      "sellPrice": 64990.0
+    },
+    "currency": "INR",
+    "launchDate": "2024-09-05",
+    "categoryId": 3,
+    "category": "Home & Kitchen",
+    "subcategoryId": 301,
+    "subcategory": "Coffee Machines",
+    "description": "Bring the coffee shop to your kitchen. The Barista Pro features an integrated conical burr grinder, precise temperature control, and a powerful steam wand for perfect microfoam latte art.",
+    "images": [
+      "https://picsum.photos/seed/CM-BPEM-SS-IN-1/600/600",
+      "https://picsum.photos/seed/CM-BPEM-SS-IN-2/600/600",
+      "https://picsum.photos/seed/CM-BPEM-SS-IN-3/600/600"
+    ],
+    "stock": 95,
+    "rating": { "rate": 4.9, "count": 2345 },
+    "attributes": {
+      "colors": [
+        { "name": "Brushed Stainless Steel", "code": "#C0C0C0" },
+        { "name": "Matte Black", "code": "#222222" }
+      ],
+      "capacity": "2L Water Tank",
+      "material": "Stainless Steel"
+    },
+    "features": [
+      "3-second heat up time",
+      "Integrated conical burr grinder",
+      "PID temperature control",
+      "Manual milk texturing"
+    ],
+    "sku": "CM-BPEM-SS-IN"
+  },
+  {
+    "id": 7,
+    "name": "The Silent Patient",
+    "slug": "the-silent-patient",
+    "brand": "Orion",
+    "price": {
+      "mrp": 599.0,
+      "sellPrice": 399.0
+    },
+    "currency": "INR",
+    "launchDate": "2019-02-05",
+    "categoryId": 4,
+    "category": "Books",
+    "subcategoryId": 401,
+    "subcategory": "Thriller",
+    "description": "A shocking psychological thriller of a woman’s act of violence against her husband—and of the therapist obsessed with uncovering her motive.",
+    "images": ["https://picsum.photos/seed/ORN-9781409181637-IN/600/600"],
+    "stock": 2500,
+    "rating": { "rate": 4.5, "count": 150234 },
+    "attributes": {
+      "author": "Alex Michaelides",
+      "format": "Paperback",
+      "pages": 336
+    },
+    "features": [
+      "International Bestseller",
+      "Goodreads Choice Award Winner",
+      "Gripping suspense"
+    ],
+    "sku": "ORN-9781409181637-IN"
+  },
+  {
+    "id": 8,
+    "name": "Eco-Friendly Yoga Mat",
+    "slug": "eco-friendly-yoga-mat",
+    "brand": "ZenFlow",
+    "price": {
+      "mrp": 4500.0,
+      "sellPrice": 3499.0
+    },
+    "currency": "INR",
+    "launchDate": "2024-04-22",
+    "categoryId": 5,
+    "category": "Sports & Outdoors",
+    "subcategoryId": 501,
+    "subcategory": "Yoga Mats",
+    "description": "Find your balance on our premium, eco-friendly yoga mat. Made from sustainably sourced natural tree rubber and PU, it provides exceptional grip and cushioning for your practice.",
+    "images": [
+      "https://picsum.photos/seed/ZF-EFYM-FGR-5MM-IN-1/600/600",
+      "https://picsum.photos/seed/ZF-EFYM-FGR-5MM-IN-2/600/600",
+      "https://picsum.photos/seed/ZF-EFYM-FGR-5MM-IN-3/600/600"
+    ],
+    "stock": 900,
+    "rating": { "rate": 4.9, "count": 3122 },
+    "attributes": {
+      "colors": [
+        { "name": "Forest Green", "code": "#228B22" },
+        { "name": "Midnight Blue", "code": "#191970" },
+        { "name": "Rose Pink", "code": "#FF66CC" }
+      ],
+      "thickness": "5mm",
+      "material": "Natural Rubber, Polyurethane"
+    },
+    "features": [
+      "Non-slip surface",
+      "PVC-free and non-toxic",
+      "Optimal cushioning for joints",
+      "Includes carrying strap"
+    ],
+    "sku": "ZF-EFYM-FGR-5MM-IN"
+  },
+  {
+    "id": 9,
+    "name": "HydratePro Vitamin C Serum",
+    "slug": "hydratepro-vitamin-c-serum",
+    "brand": "GlowUp",
+    "price": {
+      "mrp": 1999.0,
+      "sellPrice": 1299.0
+    },
+    "currency": "INR",
+    "launchDate": "2025-01-01",
+    "categoryId": 6,
+    "category": "Beauty & Personal Care",
+    "subcategoryId": 601,
+    "subcategory": "Serums",
+    "description": "Brighten and rejuvenate your skin with our powerful Vitamin C serum. Formulated with hyaluronic acid and vitamin E to reduce fine lines, fade dark spots, and provide a radiant glow.",
+    "images": [
+      "https://picsum.photos/seed/GU-HPCS-30ML-IN-1/600/600",
+      "https://picsum.photos/seed/GU-HPCS-30ML-IN-2/600/600"
+    ],
+    "stock": 1200,
+    "rating": { "rate": 4.8, "count": 7890 },
+    "attributes": {
+      "size": ["30 ml"],
+      "skin_type": "All",
+      "key_ingredients": "Vitamin C, Hyaluronic Acid"
+    },
+    "features": [
+      "Antioxidant protection",
+      "Boosts collagen production",
+      "Paraben-free and cruelty-free",
+      "Fast-absorbing"
+    ],
+    "sku": "GU-HPCS-30ML-IN"
+  },
+  {
+    "id": 10,
+    "name": "Cast Iron Skillet (10-Inch)",
+    "slug": "cast-iron-skillet-10-inch",
+    "brand": "IronClad Cookery",
+    "price": {
+      "mrp": 3500.0,
+      "sellPrice": 2799.0
+    },
+    "currency": "INR",
+    "launchDate": "2023-08-15",
+    "categoryId": 3,
+    "category": "Home & Kitchen",
+    "subcategoryId": 302,
+    "subcategory": "Cookware",
+    "description": "The ultimate workhorse for any kitchen. Pre-seasoned and ready to use, this 10-inch cast iron skillet provides superior heat retention for searing, frying, and baking.",
+    "images": [
+      "https://picsum.photos/seed/ICC-CIS-10-IN-1/600/600",
+      "https://picsum.photos/seed/ICC-CIS-10-IN-2/600/600"
+    ],
+    "stock": 350,
+    "rating": { "rate": 4.9, "count": 12543 },
+    "attributes": {
+      "colors": [{ "name": "Black", "code": "#000000" }],
+      "material": "Cast Iron",
+      "size": ["10-inch"],
+      "pre-seasoned": true
+    },
+    "features": [
+      "Unparalleled heat retention",
+      "Naturally non-stick when seasoned",
+      "Use on stovetop, oven, or campfire",
+      "Made in India"
+    ],
+    "sku": "ICC-CIS-10-IN"
+  }
+]

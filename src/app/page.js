@@ -1,103 +1,128 @@
-import Image from "next/image";
+"use client";
+import Link from "next/link";
+import Featured from "@/components/Featured";
+import { useAppContext } from "@/context/AppContext";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const { setToastData } = useAppContext();
+  const [email, setEmail] = useState("");
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const handleSubsribe = (event) => {
+    event.preventDefault();
+    setToastData({
+      type: "success",
+      message: `You have successfully subscribed with ${email}`,
+    });
+  };
+  return (
+    <>
+      {/* Hero */}
+      <section id="new" className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-gray-50" />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
+              <span className="inline-block text-xs font-semibold tracking-wider uppercase text-gray-600">
+                New Season • Up to 50% Off
+              </span>
+              <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+                Discover your style with our latest collections
+              </h1>
+              <p className="text-gray-600">
+                Curated essentials for everyday comfort. Premium quality, fair
+                prices, fast shipping.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="#featured"
+                  className="inline-flex items-center justify-center rounded-md bg-black text-white px-6 py-3 text-sm font-medium hover:bg-black/90"
+                >
+                  Shop Now
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+                {[
+                  { t: "Free Shipping", d: "Orders over $50" },
+                  { t: "Secure Checkout", d: "Protected payments" },
+                  { t: "Easy Returns", d: "30-day policy" },
+                  { t: "24/7 Support", d: "We’re here to help" },
+                ].map((f) => (
+                  <div key={f.t} className="flex items-start gap-2">
+                    <span className="mt-1 text-green-600">
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div className="text-sm font-semibold">{f.t}</div>
+                      <div className="text-xs text-gray-500">{f.d}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-black/5 blur-3xl hidden sm:block" />
+              <div className="aspect-[4/3] rounded-2xl bg-gray-100 overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1600&auto=format&fit=crop"
+                  alt="Latest collection"
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Featured */}
+      <Featured />
+
+      {/* Newsletter */}
+      <section className="py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border bg-white px-6 py-10 sm:px-10 sm:py-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold">
+                  Get 10% off your first order
+                </h3>
+                <p className="text-gray-600 mt-1">
+                  Subscribe for new arrivals, trends, and exclusive offers.
+                </p>
+              </div>
+              <form
+                className="flex flex-col sm:flex-row gap-3"
+                onSubmit={handleSubsribe}
+              >
+                <input
+                  type="email"
+                  required
+                  placeholder="Your email address"
+                  className="w-full sm:flex-1 rounded-md border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black/20"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <button
+                  className="rounded-md bg-black text-white px-6 py-3 text-sm font-medium hover:bg-black/90"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
