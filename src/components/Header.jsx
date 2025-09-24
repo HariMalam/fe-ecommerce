@@ -117,26 +117,20 @@ function Header() {
               </span>
             </div>
             <nav className="grid gap-2 text-sm">
-              <Link href="#new" className="py-2 px-2 rounded hover:bg-gray-50">
-                New Arrivals
+              <Link href="/products" className="py-2 px-2 rounded hover:bg-gray-50">
+                Products
               </Link>
               <Link
-                href="#categories"
+                href="/about"
                 className="py-2 px-2 rounded hover:bg-gray-50"
               >
-                Categories
+                About
               </Link>
               <Link
-                href="#featured"
+                href="/contact"
                 className="py-2 px-2 rounded hover:bg-gray-50"
               >
-                Featured
-              </Link>
-              <Link
-                href="#deals"
-                className="py-2 px-2 rounded hover:bg-gray-50"
-              >
-                Deals
+                Contact
               </Link>
             </nav>
           </div>

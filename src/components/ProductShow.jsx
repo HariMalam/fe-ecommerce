@@ -1,6 +1,7 @@
 import { useAppContext } from "@/context/AppContext";
 import Link from "next/link";
 import ProductNotFound from "./productNotFound";
+import Image from "next/image";
 
 const ProductsShow = ({ products }) => {
     const { search } = useAppContext();
@@ -26,12 +27,14 @@ const ProductsShow = ({ products }) => {
                     key={p.id ?? p.slug}
                     className="group overflow-hidden rounded-xl border bg-white hover:shadow-md transition"
                 >
-                    <div className="aspect-[4/3] bg-gray-100">
-                        <img
+                    <div className="aspect-[4/3] bg-gray-100 relative">
+                        <Image
                             src={p.images?.[0] || "https://via.placeholder.com/400x300?text=No+Image"}
                             alt={p.name}
-                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                            loading="lazy"
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                            priority={false}
                         />
                     </div>
                     <div className="p-4">

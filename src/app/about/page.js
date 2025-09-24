@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -7,10 +8,12 @@ export default function About() {
       <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
 
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <img
+        <Image
           src="/about.webp"
           alt="About Us"
-          className="w-full md:w-1/2 rounded-lg shadow-lg"
+          width={600}
+          height={400}
+          className="w-full md:w-1/2 rounded-lg shadow-lg object-cover"
         />
         <div className="md:w-1/2 space-y-4">
           <p className="text-gray-700 leading-relaxed">

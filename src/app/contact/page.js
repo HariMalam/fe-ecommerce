@@ -29,8 +29,8 @@ export default function Contact() {
       <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
 
       <p className="text-center text-gray-700 mb-8">
-        Have questions or need assistance? Fill out the form below, and we'll
-        get back to you as soon as possible.
+        Have questions or need assistance? Fill out the form below, and
+        we&apos;ll get back to you as soon as possible.
       </p>
 
       <form

@@ -5,6 +5,7 @@ import { useState, useMemo } from "react";
 import { useAppContext } from "../../../context/AppContext";
 import ProductNotFound from "@/components/productNotFound";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const inr = (v) =>
   new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR" }).format(
@@ -30,13 +31,13 @@ export default function ProductPage() {
   }, [product]);
 
   if (!product) return <ProductNotFound />;
-  const router = useRouter();
 
   const handleAddToCart = () => {
     addToCart(product.id, qty, color);
   };
 
   const handleBuyNow = () => {
+    const router = useRouter();
     // Add product to cart (or handle purchase)
     addToCart(product.id, qty, color);
 
@@ -53,14 +54,17 @@ export default function ProductPage() {
   return (
     <div className="min-h-screen bg-[#f7f9fc] text-[#0f172a] p-2 sm:p-4">
       <div className="mx-auto max-w-5xl flex flex-col lg:flex-row gap-8">
-        {/* Images Section */}
         <div className="flex-1 flex flex-col gap-4 top-4 self-start w-full lg:w-auto static">
           <div className="relative rounded-xl overflow-hidden bg-white border border-[#e5e7eb] shadow-sm">
-            <img
+            <Image
               src={product.images[activeIdx]}
               alt={product.name}
               loading="eager"
+              width={600}
+              height={400}
               className="w-full h-64 sm:h-96 object-cover transition-all duration-200"
+              style={{ width: "100%", height: "auto" }}
+              priority
             />
             {discountPct > 0 && (
               <span className="absolute top-3 left-3 bg-[#10b981] text-white font-bold px-3 py-1.5 rounded-full text-xs shadow-md">
@@ -80,11 +84,14 @@ export default function ProductPage() {
                     : "border-[#e5e7eb]"
                 }`}
               >
-                <img
+                <Image
                   src={src}
                   alt={`${product.name} ${i + 1}`}
                   loading="lazy"
+                  width={80}
+                  height={80}
                   className="block w-16 h-16 sm:w-20 sm:h-20 object-cover"
+                  style={{ width: "100%", height: "auto" }}
                 />
               </button>
             ))}

@@ -2,6 +2,7 @@
 import { useAppContext } from "@/context/AppContext";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CartPage() {
   const { cart, updateCart, removeCart } = useAppContext();
@@ -42,9 +43,11 @@ export default function CartPage() {
                   className="border-b"
                 >
                   <td className="p-3 flex items-center gap-3">
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.name}
+                      width={64}
+                      height={64}
                       className="w-16 h-16 object-cover rounded-lg border"
                     />
                     <span className="font-semibold text-gray-800">

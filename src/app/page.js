@@ -3,6 +3,7 @@ import Link from "next/link";
 import Featured from "@/components/Featured";
 import { useAppContext } from "@/context/AppContext";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const { setToastData } = useAppContext();
@@ -17,7 +18,6 @@ export default function Home() {
   };
   return (
     <>
-      {/* Hero */}
       <section id="new" className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-gray-50" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -71,22 +71,22 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-black/5 blur-3xl hidden sm:block" />
-              <div className="aspect-[4/3] rounded-2xl bg-gray-100 overflow-hidden shadow-lg">
-                <img
+              <div className="aspect-[4/3] rounded-2xl bg-gray-100 overflow-hidden shadow-lg relative">
+                <Image
                   src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1600&auto=format&fit=crop"
                   alt="Latest collection"
-                  className="h-full w-full object-cover"
-                  loading="eager"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                  sizes="(min-width: 1024px) 640px, 100vw"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Featured */}
       <Featured />
-
       {/* Newsletter */}
       <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

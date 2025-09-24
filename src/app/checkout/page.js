@@ -12,7 +12,7 @@ export default function CheckoutPage() {
       message: `Your order has been placed successfully!`,
     });
     setCart([]);
-  }, []);
+  }, [setToastData, setCart]);
 
   const total = Array.isArray(checkout)
     ? checkout.reduce((sum, item) => sum + item.price.sellPrice * item.qty, 0)
